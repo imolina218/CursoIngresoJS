@@ -5,21 +5,41 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	alert("ok");	
+	var numeroUno;
+	var numeroDos;
+
+	numeroUno = parseInt(txtIdNumeroUno.value);
+	numeroDos = parseInt(txtIdNumeroDos.value);
+	alert("la suma es "+(numeroUno+numeroDos));	
 }
 
 function restar()
 {
-	
+	var numeroUno;
+	var numeroDos;
+
+	numeroUno = parseInt(txtIdNumeroUno.value);
+	numeroDos = parseInt(txtIdNumeroDos.value);
+	alert("la resta es "+(numeroUno-numeroDos));
 }
 
 function multiplicar()
 { 
-	
+	var numeroUno;
+	var numeroDos;
+
+	numeroUno = parseInt(txtIdNumeroUno.value);
+	numeroDos = parseInt(txtIdNumeroDos.value);
+	alert("el producto es "+(numeroUno*numeroDos));
 }
 
 function dividir()
 {
-	
+	var numeroUno;
+	var numeroDos;
+
+	numeroUno = parseInt(txtIdNumeroUno.value);
+	numeroDos = parseInt(txtIdNumeroDos.value);
+	alert("el cociente es "+(numeroUno/numeroDos));
 }
 
