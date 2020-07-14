@@ -6,11 +6,17 @@ function sumar()
 {
 	var numeroUno;
 	var numeroDos;
+	var suma;
 
 	//numeroUno = txtIdNumeroUno.value
-	numeroUno = parseInt(txtIdNumeroUno.value) //numeroUno
-	numeroDos = parseInt(txtIdNumeroDos.value)
+	numeroUno = txtIdNumeroUno.value;//numeroUno
+	numeroDos = txtIdNumeroDos.value;
 
-	alert("la suma es "+(numeroUno+numeroDos))
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+
+	suma = numeroUno + numeroDos;
+
+	alert("la suma es "+suma);
 }
 

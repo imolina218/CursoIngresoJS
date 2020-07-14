@@ -7,9 +7,13 @@ function mostrarAumento()
 {
 	var importe;
 	var descuento;
+	var resultado;
 
-	importe = parseInt(txtIdImporte.value)
-	descuento = importe * 25 / 100
-	
-	txtIdResultado.value = importe - descuento
+	importe = txtIdImporte.value;
+	importe = parseInt(importe);
+
+	descuento = importe * 25 / 100;
+	resultado = importe - descuento;
+
+	txtIdResultado.value = resultado;
 }
