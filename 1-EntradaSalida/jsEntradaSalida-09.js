@@ -16,7 +16,7 @@ function mostrarAumento()
 
 	//resultado = sueldo + aumento;
 
-	resultado = sueldo * 1.1
+	resultado = sueldo * 1.1;
 
 	txtIdResultado.value = resultado;
 }
