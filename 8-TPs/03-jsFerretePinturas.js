@@ -8,12 +8,12 @@ function FahrenheitCentigrados ()
 	var centigrados;
 
 	fahrenheit = txtIdTemperatura.value;
-	fahrenheit = parseInt(fahrenheit);
+	fahrenheit = parseFloat(fahrenheit);
 
 	centigrados = (fahrenheit-32)*5/9;
-	centigrados = parseInt(centigrados);
+	centigrados = parseFloat(centigrados);
 
-	alert(fahrenheit+" grados fahrenheit son "+centigrados+" grados centigrados.");
+	alert(fahrenheit+" grados fahrenheit son "+centigrados.toFixed(2)+" grados centigrados.");
 }
 
 function CentigradosFahrenheit () 
@@ -22,10 +22,9 @@ function CentigradosFahrenheit ()
 	var fahrenheit;
 
 	centigrados = txtIdTemperatura.value;
-	centigrados = parseInt(centigrados);
+	centigrados = parseFloat(centigrados);
 
 	fahrenheit = (centigrados*9/5)+32;
-	fahrenheit = parseInt(fahrenheit);
 
-	alert(centigrados+" grados centigrados son "+fahrenheit+" grados fahrenheit.");
+	alert(centigrados+" grados centigrados son "+fahrenheit.toFixed(2)+" grados fahrenheit.");
 }

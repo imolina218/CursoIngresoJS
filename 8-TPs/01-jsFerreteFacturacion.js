@@ -11,13 +11,13 @@ function Sumar ()
 	var suma;
 
 	precioUno = txtIdPrecioUno.value;
-	precioUno = parseInt(precioUno)
+	precioUno = parseFloat(precioUno)
 
 	precioDos = txtIdPrecioDos.value;
-	precioDos = parseInt(precioDos)
+	precioDos = parseFloat(precioDos)
 
 	precioTres = txtIdPrecioTres.value;
-	precioTres = parseInt(precioTres)
+	precioTres = parseFloat(precioTres)
 
 	suma = precioUno+precioDos+(precioTres)
 
@@ -31,13 +31,13 @@ function Promedio ()
 	var promedio;
 
 	precioUno = txtIdPrecioUno.value;
-	precioUno = parseInt(precioUno)
+	precioUno = parseFloat(precioUno)
 
 	precioDos = txtIdPrecioDos.value;
-	precioDos = parseInt(precioDos)
+	precioDos = parseFloat(precioDos)
 
 	precioTres = txtIdPrecioTres.value;
-	precioTres = parseInt(precioTres)
+	precioTres = parseFloat(precioTres)
 
 	promedio = (precioUno+precioDos+precioTres)/3
 
@@ -52,13 +52,13 @@ function PrecioFinal ()
 	//var IVA;
 
 	precioUno = txtIdPrecioUno.value;
-	precioUno = parseInt(precioUno)
+	precioUno = parseFloat(precioUno)
 
 	precioDos = txtIdPrecioDos.value;
-	precioDos = parseInt(precioDos)
+	precioDos = parseFloat(precioDos)
 
 	precioTres = txtIdPrecioTres.value;
-	precioTres = parseInt(precioTres)
+	precioTres = parseFloat(precioTres)
 
 	suma = precioUno+precioDos+precioTres
 

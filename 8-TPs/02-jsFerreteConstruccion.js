@@ -23,7 +23,7 @@ function Rectangulo ()
 
 	alambreTotal = radio*3
 
-	alert("Cantidad de alambre necesaria: "+alambreTotal+" metros")
+	alert("Cantidad de alambre necesaria: "+alambreTotal.toFixed(2)+" metros")
 }
 function Circulo () 
 {
@@ -38,7 +38,7 @@ function Circulo ()
 
 	alambreTotal = longitud*3;
 
-	alert("La cantidad de alambre necesaria es: "+alambreTotal+" metros")
+	alert("La cantidad de alambre necesaria es: "+alambreTotal.toFixed(2)+" metros")
 }
 function Materiales () 
 {
@@ -54,10 +54,9 @@ function Materiales ()
 	largo = parseFloat(largo)
 
 	cemento = (largo*ancho)*2
-	cemento = parseInt(cemento)
+	cemento = parseFloat(cemento)
 
 	cal = (largo*ancho)*3
-	cal = parseInt(cal)
 
-	alert("Se necesitan "+cemento+" bolsas de cemento y "+cal+" bolsas de cal.")
+	alert("Se necesitan "+cemento.toFixed(2)+" bolsas de cemento y "+cal.toFixed(2)+" bolsas de cal.")
 }
