@@ -13,14 +13,75 @@ function CalcularPrecio ()
  	var cantidad;
  	var marca;
  	var precio;
+ 	var descuento;
+ 	var IIBB;
 
  	cantidad = txtIdCantidad.value;
  	cantidad = parseInt(cantidad);
  	marca = Marca.value;
- 	precio = 35
+ 	precio = 35;
+ 	precio = precio*cantidad;
 
  	if (cantidad>5)
  	{
-
+ 		descuento = precio*0.5;
+ 		precio = precio-descuento;
+ 	}else
+ 	{
+ 		if (cantidad==5)
+ 		{
+ 			if (marca=="ArgentinaLuz")
+ 			{
+		 		descuento = precio*0.4;
+		 		precio = precio-descuento;
+ 			}else
+ 			{
+		 		descuento = precio*0.3;
+		 		precio = precio-descuento;
+ 			}
+ 		}else
+ 		{
+ 			if (cantidad==4)
+ 			{
+ 				if (marca=="ArgentinaLuz"||marca=="FelipeLamparas")
+ 				{
+			 		descuento = precio*0.25;
+			 		precio = precio-descuento;
+ 				}else
+ 				{
+			 		descuento = precio*0.2;
+			 		precio = precio-descuento;
+ 				}
+ 			}else
+ 			{
+ 				if(cantidad==3){
+ 					if (marca=="ArgentinaLuz")
+ 					{
+				 		descuento = precio*0.15;
+				 		precio = precio-descuento;
+ 					}else
+ 					{
+	 					if (marca=="FelipeLamparas")
+	 					{
+					 		descuento = precio*0.1;
+							precio = precio-descuento;
+	 					}else{
+					 		descuento = precio*0.05;
+					 		precio = precio-descuento;
+	 					}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	if (precio>120)
+ 	{
+ 		IIBB = precio*0.1;
+ 		alert("IIBB Usted pago $"+IIBB)
+ 		precio = precio+IIBB;
+ 		txtIdprecioDescuento.value = "$"+precio.toFixed(2);
+ 	}else
+ 	{
+ 		txtIdprecioDescuento.value = "$"+precio.toFixed(2);
  	}
 }
